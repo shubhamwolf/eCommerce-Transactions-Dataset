@@ -1,98 +1,18 @@
-eCommerce Transactions Dataset
+Welcome to my eCommerce Data Science assignment repository.
+This repository contains the work done for a comprehensive data analysis project based on a provided eCommerce transactions dataset, which consists of customer, product, and transaction details. The project is divided into three main tasks, each focused on extracting valuable insights and building machine learning models.
 
-Overview:
-You are provided with an eCommerce Transactions dataset consisting of three files:
-Customers.csv, Products.csv, and Transactions.csv. Your task is to perform
-exploratory data analysis (EDA), build predictive models, and derive actionable insights. This
-assignment will test your data analysis, machine learning, and business insight generation skills.
-Customers.csv:
-https://drive.google.com/file/d/1bu_--mo79VdUG9oin4ybfFGRUSXAe-WE/view?usp=sharing
-Products.csv :
-https://drive.google.com/file/d/1IKuDizVapw-hyktwfpoAoaGtHtTNHfd0/view?usp=sharing
-Transactions.csv :
-https://drive.google.com/file/d/1saEqdbBB-vuk2hxoAf4TzDEsykdKlzbF/view?usp=sharing
-
-Files Description:
-1. Customers.csv
-○ CustomerID: Unique identifier for each customer.
-○ CustomerName: Name of the customer.
-○ Region: Continent where the customer resides.
-○ SignupDate: Date when the customer signed up.
-2. Products.csv
-○ ProductID: Unique identifier for each product.
-○ ProductName: Name of the product.
-○ Category: Product category.
-○ Price: Product price in USD.
-3. Transactions.csv
-○ TransactionID: Unique identifier for each transaction.
-○ CustomerID: ID of the customer who made the transaction.
-○ ProductID: ID of the product sold.
-○ TransactionDate: Date of the transaction.
-
-○ Quantity: Quantity of the product purchased.
-○ TotalValue: Total value of the transaction.
-○ Price: Price of the product sold.
-
-Assignment Tasks:
 Task 1: Exploratory Data Analysis (EDA) and Business Insights
-1. Perform EDA on the provided dataset.
-2. Derive at least 5 business insights from the EDA.
-○ Write these insights in short point-wise sentences (maximum 100 words per
-insight).
-Deliverables:
-● A Jupyter Notebook/Python script containing your EDA code.
-● A PDF report with business insights (maximum 500 words).
+In this section, I performed an in-depth analysis of the provided dataset to uncover patterns, trends, and anomalies. Various visualizations and statistical techniques were used to understand customer behavior, product sales, and transaction patterns. I also derived five actionable business insights based on the EDA, which highlight potential areas of improvement for business strategies and customer targeting.
 
 Task 2: Lookalike Model
-Build a Lookalike Model that takes a user's information as input and recommends 3 similar
-customers based on their profile and transaction history. The model should:
-● Use both customer and product information.
-● Assign a similarity score to each recommended customer.
-Deliverables:
-● Give the top 3 lookalikes with there similarity scores for the first 20 customers
-(CustomerID: C0001 - C0020) in Customers.csv. Form an “Lookalike.csv” which has
-just one map: Map<cust_id, List<cust_id, score>>
-● A Jupyter Notebook/Python script explaining your model development.
-Evaluation Criteria:
-● Model accuracy and logic.
-● Quality of recommendations and similarity scores.
+For this task, I developed a lookalike model to identify customers similar to a given profile. The model uses customer and product information, including demographic and transaction data, to recommend the top three similar customers for any given user. The lookalike recommendations are based on a similarity score that is computed using advanced algorithms, such as cosine similarity, to measure the closeness between customer profiles.
 
 Task 3: Customer Segmentation / Clustering
-Perform customer segmentation using clustering techniques. Use both profile information
-(from Customers.csv) and transaction information (from Transactions.csv).
-● You have the flexibility to choose any clustering algorithm and any number of clusters in
-between(2 and 10)
-● Calculate clustering metrics, including the DB Index(Evaluation will be done on this).
-● Visualise your clusters using relevant plots.
-Deliverables:
-● A report on your clustering results, including:
-○ The number of clusters formed.
-○ DB Index value.
-○ Other relevant clustering metrics.
-● A Jupyter Notebook/Python script containing your clustering code.
-Evaluation Criteria:
-● Clustering logic and metrics.
-● Visual representation of clusters.
+I performed customer segmentation using clustering techniques on both customer profile and transaction data. The goal was to group customers based on their behaviors, purchasing patterns, and demographic information. Several clustering algorithms were tested, and the optimal clustering solution was chosen based on the Davies-Bouldin index and other relevant metrics. I visualized the clusters and discussed the characteristics of each segment in the report.
 
-Submission Instructions:
-1. GitHub Link
-○ Upload all the PDF and code files in a public GitHub repository.
-2. File Naming Convention:
-○ Use the following naming convention for all your files:
-■ FirstName_LastName_EDA.pdf
-■ FirstName_LastName_EDA.ipynb
-■ FirstName_LastName_Lookalike.csv
-■ FirstName_LastName_Lookalike.ipynb
-■ FirstName_LastName_Clustering.pdf
-■ FirstName_LastName_Clustering.ipynb
+The repository includes:
 
-Evaluation Process:
-Your submissions will be evaluated based on the following criteria:
-
-Task Weightage
-Exploratory Data Analysis 25%
-Business Insights 15%
-Lookalike Model 30%
-Customer Segmentation 30%
-Given the large number of submissions, the evaluation will be automated as much as possible.
-Ensure your file formats and naming conventions are accurate to avoid disqualification.
+Jupyter Notebooks with detailed code for each task
+A PDF report summarizing the findings and insights for each task
+A CSV file for the lookalike model recommendations
+This project showcases my skills in data analysis, machine learning, and deriving business insights from data. Feel free to explore the repository for the full analysis and model implementations.
